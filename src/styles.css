@@ -16,7 +16,23 @@ header,
   footer {
     padding: 20px;
   }
+  header h1 {
+    font-size: 3rem;
+  }
   
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
   header {
     background-color: #3f51b5;
     color: #fff;
