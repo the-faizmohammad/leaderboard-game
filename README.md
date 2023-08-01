@@ -27,7 +27,8 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-## 📖 Leaderboard is a app that updates the leaderboard using a API. 
+## 📖 Description. 
+Leaderboard website for displaying and submitting player scores. Connects to Leaderboard API for 'Refresh' and 'Submit' actions. Utilizes Gitflow for version control. Priority on preserving user input and adding styling."
 
 ## 🛠 Built With <a name="built-with">HTML, CSS and JavaScript</a>
 
@@ -58,8 +59,8 @@ To get a local copy up and running, follow these steps:
 
 - Open your Terminal in your VSCode.
 - Navigate to the desired directory [folder] to which you want to clone the repository to
-- [Copy & Paste] the Git clone you find in the code button https://github.com/dvcorreia1984/leaderboard.git into your terminal and press [Enter]
-- run using "npm start" in your terminal
+- [Copy & Paste] the Git clone you find in the code button https://github.com/the-faizmohammad/leaderboard-game into your terminal and press [Enter]
+- run using "npm run dev" in your terminal
 
 ### Prerequisites
 
@@ -68,18 +69,21 @@ In order to run this project you need:
 - General Understanding of HTML, CSS and JavaScript
 - basic Knowledge of Git Commands
 - basic Knowledge of the Terminal Commands
+- basic understanding of gitflow
+- understanding Es6 javascript module
+- webpack configuration
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/dvcorreia1984/leaderboard.git
+- git clone (https://github.com/the-faizmohammad/leaderboard-game)
 
 Example commands:
 
 ```sh
   cd my-folder
-  git https://github.com/dvcorreia1984/leaderboard.git
+  git (https://github.com/the-faizmohammad/leaderboard-game)
 
 ```
 
