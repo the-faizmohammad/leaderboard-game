@@ -1,0 +1,15 @@
+{
+  "name": "leaderboard-game",
+  "version": "1.0.0",
+  "description": "\"Leaderboard website for displaying and submitting player scores. Connects to Leaderboard API for 'Refresh' and 'Submit' actions. Utilizes Gitflow for version control. Priority on preserving user input and adding styling.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hint": "^7.1.10"
+  }
+}
