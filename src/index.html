@@ -18,11 +18,11 @@
             <form action="#" method="POST">
                 <div class="user-input">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your name" required />
+                    <input type="text" id="name" placeholder="Enter Your name" required />
                 </div>
                 <div class="user-input">
                     <label for="score">Score</label>
-                    <input type="number" id="score" placeholder="Your score" required />
+                    <input type="number" id="score" placeholder="Update Your score" required />
                 </div>
                 <div class="submit-button">
                     <button type="button" id="add-score">Submit</button>
@@ -34,9 +34,33 @@
                 <h2 class="heading">Recent scores</h2>
                 <button id="scores-refresh" type="button">Refresh</button>
             </div>
-            <ol class="scores-list" id="leaderboard-list">
-                <!-- Sorted list of countries will be displayed here -->
-            </ol>
+            <ul class="scores-list">
+                <!-- example list elements (scores) -->
+                <li>
+                    <p class="country">India</p>
+                    <p class="score-value">100</p>
+                </li>
+                <li>
+                    <p class="country">United States</p>
+                    <p class="score-value">22</p>
+                </li>
+                <li>
+                    <p class="country">Australia</p>
+                    <p class="score-value">59</p>
+                </li>
+                <li>
+                    <p class="country">England</p>
+                    <p class="score-value">77</p>
+                </li>
+                <li>
+                    <p class="country">Germany</p>
+                    <p class="score-value">121</p>
+                </li>
+                <li>
+                    <p class="country">Japan</p>
+                    <p class="score-value">109</p>
+                </li>
+            </ul>
         </section>   
 </main>
 <footer class="footer">
