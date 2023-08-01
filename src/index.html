@@ -11,5 +11,24 @@
 <header>
         <h1 class="header">Leaderboard</h1>
     </header>
+    <main>
+    <!-- section to add the name and score -->
+        <section class="add-scores">
+            <h2 class="scores-heading">Add your score</h2>
+            <form action="#" method="POST">
+                <div class="user-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required />
+                </div>
+                <div class="user-input">
+                    <label for="score">Score</label>
+                    <input type="number" id="score" placeholder="Your score" required />
+                </div>
+                <div class="submit-button">
+                    <button type="button" id="add-score">Submit</button>
+                </div>
+            </form>
+        </section>    
+</main>
 </body>
 </html>
