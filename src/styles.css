@@ -45,3 +45,144 @@ footer {
     background-color: #3f51b5;
     color: #fff;
   }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  header,
+  main,
+  footer {
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .heading {
+    font-size: 2.2rem;
+    color: #3f51b5;
+  }
+  
+  .scores-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .country {
+    font-size: 1.6rem;
+    color: #3f51b5;
+  }
+  
+  .score-value {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .add-scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scores-heading {
+    font-size: 2rem;
+    color: #3f51b5;
+  }
+  
+  #scores-refresh {
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #scores-refresh:hover {
+    background-color: #2e7d32;
+  }
+  
+  .user-input input {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #3f51b5;
+    border-radius: 8px;
+    margin: 12px 0;
+    font-size: 1.6rem;
+  }
+  
+  .submit-button button {
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button button:hover {
+    background-color: #2e7d32;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  
