@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Leaderboard-game</title>
+<script defer src="main.js"></script></head>
+<body>
+<header>
+        <h1 class="header">Leaderboard</h1>
+    </header>
+    <main>
+    <!-- section to add the name and score -->
+        <section class="add-scores">
+            <h2 class="scores-heading">Add your score</h2>
+            <form action="#" method="POST">
+                <div class="user-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required />
+                </div>
+                <div class="user-input">
+                    <label for="score">Score</label>
+                    <input type="number" id="score" placeholder="Your score" required />
+                </div>
+                <div class="submit-button">
+                    <button type="button" id="add-score">Submit</button>
+                </div>
+            </form>
+        </section> 
+  <section class="leaderboard">
+            <div class="header">
+                <h2 class="heading">Recent scores</h2>
+                <button id="scores-refresh" type="button">Refresh</button>
+            </div>
+            <ol class="scores-list" id="leaderboard-list">
+                <!-- Sorted list of countries will be displayed here -->
+            </ol>
+        </section>   
+</main>
+<footer class="footer">
+        copyright:@the-faizmohammad
+    </footer>
+</body>
+</html>

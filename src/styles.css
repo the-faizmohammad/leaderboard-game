@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.heading {
+  font-size: 2.2rem;
+  color: #3f51b5;
+}
+
+#scores-refresh {
+  order: 1;
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-score {
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scores-refresh:hover,
+#add-score:hover {
+  background-color: #2e7d32;
+}
+
+.scores-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+li:nth-child(odd) {
+  background-color: #fff;
+}
+
+li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.country {
+  font-size: 1.6rem;
+  color: #3f51b5;
+}
+
+.score-value {
+  font-size: 1.6rem;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.add-scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.user-input {
+  margin: 10px 0;
+}
+
+.user-input input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #3f51b5;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-size: 1.6rem;
+}
+
+.submit-btn button {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+  background-color: #2e7d32;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #3f51b5;
+  color: #fff;
+}
