@@ -103,6 +103,14 @@ li {
   margin-bottom: 5px;
 }
 
+li:nth-child(odd) {
+  background-color: #fff;
+}
+
+li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
 li:last-child {
   border-bottom: none;
 }
