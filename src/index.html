@@ -8,30 +8,14 @@
     <title>Leaderboard-game</title>
 </head>
 <body>
-<header>
+    <header>
         <h1 class="header">Leaderboard</h1>
     </header>
     <main>
-    <!-- section to add the name and score -->
-        <section class="add-scores">
-            <h2 class="scores-heading">Add your score</h2>
-            <form action="#" method="POST">
-                <div class="user-input">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter Your name" required />
-                </div>
-                <div class="user-input">
-                    <label for="score">Score</label>
-                    <input type="number" id="score" placeholder="Update Your score" required />
-                </div>
-                <div class="submit-button">
-                    <button type="button" id="add-score">Submit</button>
-                </div>
-            </form>
-        </section> 
-  <section class="leaderboard">
+        <!-- sections that shows score board -->
+        <section class="leaderboard">
             <div class="header">
-                <h2 class="heading">Recent scores</h2>
+                <h2 class="title">Recent scores</h2>
                 <button id="scores-refresh" type="button">Refresh</button>
             </div>
             <ul class="scores-list">
@@ -61,10 +45,27 @@
                     <p class="score-value">109</p>
                 </li>
             </ul>
-        </section>   
-</main>
-<footer class="footer">
-        copyright:@the-faizmohammad
+        </section>
+        <!-- section to add the name and score -->
+        <section class="add-scores">
+            <h2 class="title">Add your score</h2>
+            <form action="#" method="POST">
+                <div class="user-input">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Your name" required/>
+                </div>
+                <div class="user-input">
+                    <label for="score"></label>
+                    <input type="number" id="score" placeholder="Your score" required/>
+                </div>
+                <div class="submit-btn">
+                    <button type="button" id="add-score">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        footer
     </footer>
 </body>
-</html>
+</html> 

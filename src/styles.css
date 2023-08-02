@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: #f0f0f0;
+  padding: 20px;
 }
 
 header,
@@ -15,18 +22,23 @@ footer {
 header {
   background-color: #3f51b5;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
 }
 
+.title {
+  font-size: 2.2rem;
+} 
+
 header h1 {
   font-size: 3rem;
+  margin-left: 30px;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   flex-grow: 1;
 }
 
@@ -41,11 +53,29 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
 .heading {
   font-size: 2.2rem;
   color: #3f51b5;
+}
+
+#scores-refresh,
+#add-score {
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scores-refresh:hover,
+#add-score:hover {
+  background-color: #2e7d32;
 }
 
 .scores-list {
@@ -59,6 +89,7 @@ li {
   align-items: center;
   padding: 16px 12px;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
 }
 
 li:last-child {
@@ -80,26 +111,11 @@ li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
-.scores-heading {
-  font-size: 2rem;
-  color: #3f51b5;
-}
-
-#scores-refresh {
-  padding: 12px 24px;
-  font-size: 1.4rem;
-  background-color: #3f51b5;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#scores-refresh:hover {
-  background-color: #2e7d32;
+.user-input {
+  margin: 10px 0;
 }
 
 .user-input input {
@@ -111,7 +127,7 @@ li:last-child {
   font-size: 1.6rem;
 }
 
-.submit-button button {
+.submit-btn button {
   background-color: #3f51b5;
   color: #fff;
   border: none;
@@ -122,7 +138,7 @@ li:last-child {
   transition: background-color 0.3s ease;
 }
 
-.submit-button button:hover {
+.submit-btn button:hover {
   background-color: #2e7d32;
 }
 
