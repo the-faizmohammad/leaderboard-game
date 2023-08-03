@@ -31,3 +31,15 @@ export const addScore = async (user, score) => {
       },
       body: JSON.stringify({ user, score })
     });
+if (response.ok) {
+      alert('Score added successfully!');
+      document.getElementById('user-name').value = '';
+      document.getElementById('score').value = '';
+      await updateScoresList();
+    } else {
+      throw new Error('Failed to add score');
+    }
+  } catch (error) {
+    console.error('Error adding a new score:', error);
+  }
+};
