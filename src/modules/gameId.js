@@ -1,4 +1,4 @@
-/*
+/* e9hgUU8qvHHdchrqFL6R
     function createNewGame() {
       const apiUrl = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/";
 
@@ -22,5 +22,12 @@
           console.error("Failed to create the game:", error);
         });
     } */
-const gameId = 'e9hgUU8qvHHdchrqFL6R';
-export default gameId;
+    
+    
+    const apiLink = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    const gmeId = 'e9hgUU8qvHHdchrqFL6R';
+    
+    export { apiLink, gmeId };
+    
+
+    
