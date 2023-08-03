@@ -21,6 +21,6 @@
         .catch((error) => {
           console.error("Failed to create the game:", error);
         });
-    }*/
+    } */
 const gameId = 'e9hgUU8qvHHdchrqFL6R';
-export { gameId };
+export default gameId;

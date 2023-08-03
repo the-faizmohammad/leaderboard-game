@@ -1,5 +1,7 @@
-const baseUrl = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/";
-const gameId = 'e9hgUU8qvHHdchrqFL6R'; 
+import gameId from './gameId.js';
+
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+
 export const updateScoresList = async () => {
   try {
     const response = await fetch(`${baseUrl}games/${gameId}/scores/`);
@@ -18,7 +20,7 @@ export const updateScoresList = async () => {
       scoresList.appendChild(li);
     });
   } catch (error) {
-    console.error('Error getting game scores:', error);
+    // Handle errors here
   }
 };
 
@@ -27,12 +29,12 @@ export const addScore = async (user, score) => {
     const response = await fetch(`${baseUrl}games/${gameId}/scores/`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ user, score })
+      body: JSON.stringify({ user, score }),
     });
-if (response.ok) {
-      alert('Score added successfully!');
+
+    if (response.ok) {
       document.getElementById('user-name').value = '';
       document.getElementById('score').value = '';
       await updateScoresList();
@@ -40,6 +42,8 @@ if (response.ok) {
       throw new Error('Failed to add score');
     }
   } catch (error) {
-    console.error('Error adding a new score:', error);
+    // Handle errors here
   }
 };
+
+export default gameId;
