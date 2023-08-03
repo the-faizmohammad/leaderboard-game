@@ -6,12 +6,11 @@ const submitButton = document.getElementById('add-score');
 const refreshButton = document.getElementById('scores-refresh');
 const nameInput = document.getElementById('user-name');
 const scoreInput = document.getElementById('score');
+const scoresList = document.querySelector('.scores-list');
 
 submitButton.addEventListener('click', async () => {
   const name = nameInput.value;
-  const score = parseInt(scoreInput.value);
-
-  // Call the addScore function to save the score to the API
+  const score = parseInt(scoreInput.value, 10);
   await addScore(name, score);
 
   // Clear the input fields after adding the score
@@ -20,17 +19,19 @@ submitButton.addEventListener('click', async () => {
 });
 
 refreshButton.addEventListener('click', async () => {
-  // Call the refreshScore function to get the latest scores from the API
-  const scores = await refreshScore();
+  // Call the refreshScore function to fetch the scores
+  const response = await refreshScore();
 
-  // Display the scores in the list
-  const scoresList = document.querySelector('.scores-list');
+  if (!response.ok) {
+    return;
+  }
+  const scores = await response.json();
+
   scoresList.innerHTML = '';
 
   scores.result.forEach((item) => {
     const li = document.createElement('li');
-    li.innerHTML = `${item.user}: ${item.score}`;
+    li.textContent = `${item.user}: ${item.score}`;
     scoresList.appendChild(li);
   });
 });
-

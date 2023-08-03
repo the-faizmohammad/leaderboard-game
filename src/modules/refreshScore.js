@@ -1,17 +1,4 @@
-import { apiLink, gmeId } from './gameId.js'; 
-const refreshScore = async () => {
-  try {
-    const response = await fetch(`${apiLink}${gmeId}/scores`);
+import { apiLink, gmeId } from './gameId.js';
 
-    if (!response.ok) {
-      throw new Error('Failed to fetch scores');
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error.message);
-  }
-};
-
+const refreshScore = async () => fetch(`${apiLink}${gmeId}/scores`);
 export default refreshScore;

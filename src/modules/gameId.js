@@ -22,12 +22,8 @@
           console.error("Failed to create the game:", error);
         });
     } */
-    
-    
-    const apiLink = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-    const gmeId = 'e9hgUU8qvHHdchrqFL6R';
-    
-    export { apiLink, gmeId };
-    
 
-    
+const apiLink = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const gmeId = 'e9hgUU8qvHHdchrqFL6R';
+
+export { apiLink, gmeId };
