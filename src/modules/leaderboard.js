@@ -21,3 +21,13 @@ export const updateScoresList = async () => {
     console.error('Error getting game scores:', error);
   }
 };
+
+export const addScore = async (user, score) => {
+  try {
+    const response = await fetch(`${baseUrl}games/${gameId}/scores/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user, score })
+    });
