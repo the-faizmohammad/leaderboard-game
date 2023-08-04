@@ -9,7 +9,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-image: url('./assets/marvels.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
 }
 
@@ -20,7 +22,6 @@ footer {
 }
 
 header {
-  background-color: #3f51b5;
   color: #fff;
   text-align: left;
   padding: 20px 0;
