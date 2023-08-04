@@ -45,9 +45,14 @@ main {
 
 section {
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5); 
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard {
+  height: 650px;
+  overflow: auto;
 }
 
 .header {
@@ -95,6 +100,9 @@ section {
   padding: 0;
 }
 
+.scores-list li .country {
+  margin-right: 20px;
+}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -114,14 +122,19 @@ li {
   padding: 16px 12px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 5px;
+  animation: blink 4s infinite;
 }
 
 li:nth-child(odd) {
-  background-color: #fff;
+  background-color: rgba(232, 77, 77, 0.4);
+  font-weight: bold;
+
 }
 
 li:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: rgba(7, 129, 244, 0.4); 
+  font-weight: bold;
+
 }
 
 li:last-child {
@@ -148,6 +161,12 @@ li:last-child {
 
 .user-input {
   margin: 10px 0;
+}
+
+.user-input label {
+  font-size: 1.8rem;
+  color: black; 
+  font-weight: bold; 
 }
 
 .user-input input {
@@ -180,3 +199,4 @@ footer {
   background-color: #3f51b5;
   color: #fff;
 }
+
