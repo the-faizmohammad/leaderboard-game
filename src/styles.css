@@ -191,8 +191,8 @@ li:last-child {
 }
 
 footer {
-  text-align: center;
+  text-align: right;
   padding: 10px;
-  background-color: #3f51b5;
   color: #fff;
+  font-weight: bolder;
 }
