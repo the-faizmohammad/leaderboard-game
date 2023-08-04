@@ -9,7 +9,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-image: url('./assets/marvels.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
 }
 
@@ -20,7 +22,6 @@ footer {
 }
 
 header {
-  background-color: #3f51b5;
   color: #fff;
   text-align: left;
   padding: 20px 0;
@@ -44,9 +45,14 @@ main {
 
 section {
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard {
+  height: 650px;
+  overflow: auto;
 }
 
 .header {
@@ -94,6 +100,20 @@ section {
   padding: 0;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 li {
   display: flex;
   justify-content: space-between;
@@ -101,14 +121,17 @@ li {
   padding: 16px 12px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 5px;
+  animation: blink 4s infinite;
 }
 
 li:nth-child(odd) {
-  background-color: #fff;
+  background-color: rgba(232, 77, 77, 0.4);
+  font-weight: bold;
 }
 
 li:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: rgba(7, 129, 244, 0.4);
+  font-weight: bold;
 }
 
 li:last-child {
@@ -137,6 +160,12 @@ li:last-child {
   margin: 10px 0;
 }
 
+.user-input label {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+}
+
 .user-input input {
   width: 100%;
   padding: 16px;
@@ -162,8 +191,8 @@ li:last-child {
 }
 
 footer {
-  text-align: center;
+  text-align: right;
   padding: 10px;
-  background-color: #3f51b5;
   color: #fff;
+  font-weight: bolder;
 }
