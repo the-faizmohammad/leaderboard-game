@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
-
 <div align="center">
+<br/>
+<h3><b>Leaderboard</b></h3>
 
-  <br/>
+![image](https://github.com/the-faizmohammad/leaderboard-game/assets/134736318/649dd770-f64b-4a22-b020-5e9be5f9c224)
 
-  <h3><b>Leaderboard</b></h3>
 
 </div>
 
@@ -18,6 +18,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
 - [👥 Authors](#authors)
+- [🚀Live Demo](https://the-faizmohammad.github.io/leaderboard-game/dist/)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -48,6 +49,10 @@ Some of the key features:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Live Demo <a name="Live-Demo"></a>
+
+[🚀Live Demo](https://the-faizmohammad.github.io/leaderboard-game/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
